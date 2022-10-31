@@ -1,0 +1,32 @@
+{
+    "name": "hoiast/alura-downloader",
+    "description": "Biblioteca para baixar suas videoaulas favoritas da plataforma de cursos Alura.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hoiast\\AluraDownloader\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Murilo Hoias Teixeira",
+            "email": "murilohoias@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "require-dev": {
+        "phan/phan": "^5.4",
+        "squizlabs/php_codesniffer": "^3.7"
+    },
+    "scripts": {
+        "cs": "phpcs --ignore=src/StringSanitizer.php --standard=PSR12 src",
+        "phan": "phan",
+        "check": [
+            "@cs",
+            "@phan"
+        ]
+    }
+}

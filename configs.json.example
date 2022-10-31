@@ -1,0 +1,9 @@
+{
+    "username" : "email@email.com",
+    "password" : "password",
+    "coursesURLs" : [
+        "https://cursos.alura.com.br/course/php-composer",
+        "https://cursos.alura.com.br/course/php-mysql"
+    ]
+
+}
